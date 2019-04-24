@@ -11,7 +11,9 @@
     <!-- <link rel="stylesheet" href="assets/CSS/reset.css" type="text/css"> -->
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
     <!-- firebase -->
-    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+		<!-- moment.js -->
+		<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
 </head> 
 
@@ -41,13 +43,8 @@
 							<th scope="col">Minutes Away</th>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td scope="row">name</td>
-							<td>dest</td>
-							<td>freq</td>
-							<td>time</td>
-							<td>time</td>
+					<tbody id="table-body">
+
 					</tbody>
 				</table>
 			</div>
@@ -60,18 +57,20 @@
 
 				<div class="form-group">
 					<label for="train-name">Destination</label>
-					<input class="form-control" id="train-name">
+					<input class="form-control" id="train-dest">
 				</div>
 
 				<div class="form-group">
 					<label for="train-name">First Train Time</label>
-					<input class="form-control" id="train-name">
+					<input class="form-control" id="train-time" placeholder="military time (HH:MM)">
 				</div>
 
 				<div class="form-group">
 					<label for="train-name">Frequency</label>
-					<input class="form-control" id="train-name">
+					<input class="form-control" id="train-freq" placeholder="in minutes">
 				</div>
+
+				<button id="submit" type="submit" class="btn btn-primary">Submit</button>
 
 			</form>
 
@@ -93,7 +92,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- logic -->
-<script src="assets/javascript/app.js"></script>
+<script src="assets/javascript/logic.js"></script>
 <script type="text/javascript"></script>
 
 </body> 
